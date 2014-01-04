@@ -1,0 +1,589 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		97F589A6187767B400455847 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 97F589A5187767B400455847 /* Foundation.framework */; };
+		97F589A8187767B400455847 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 97F589A7187767B400455847 /* CoreGraphics.framework */; };
+		97F589AA187767B400455847 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 97F589A9187767B400455847 /* UIKit.framework */; };
+		97F589AC187767B400455847 /* SpriteKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 97F589AB187767B400455847 /* SpriteKit.framework */; };
+		97F589B2187767B400455847 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 97F589B0187767B400455847 /* InfoPlist.strings */; };
+		97F589B4187767B400455847 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 97F589B3187767B400455847 /* main.m */; };
+		97F589B8187767B400455847 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 97F589B7187767B400455847 /* AppDelegate.m */; };
+		97F589BB187767B400455847 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 97F589B9187767B400455847 /* Main.storyboard */; };
+		97F589BE187767B400455847 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 97F589BD187767B400455847 /* ViewController.m */; };
+		97F589C1187767B400455847 /* MyScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 97F589C0187767B400455847 /* MyScene.m */; };
+		97F589C3187767B400455847 /* Spaceship.png in Resources */ = {isa = PBXBuildFile; fileRef = 97F589C2187767B400455847 /* Spaceship.png */; };
+		97F589C5187767B500455847 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 97F589C4187767B500455847 /* Images.xcassets */; };
+		97F589CC187767B500455847 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 97F589CB187767B500455847 /* XCTest.framework */; };
+		97F589CD187767B500455847 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 97F589A5187767B400455847 /* Foundation.framework */; };
+		97F589CE187767B500455847 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 97F589A9187767B400455847 /* UIKit.framework */; };
+		97F589D6187767B500455847 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 97F589D4187767B500455847 /* InfoPlist.strings */; };
+		97F589D8187767B500455847 /* DelaunayTriangulation_SpriteKit_tutorialTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 97F589D7187767B500455847 /* DelaunayTriangulation_SpriteKit_tutorialTests.m */; };
+		97F589FF187767F400455847 /* NSArray+Delaunay.m in Sources */ = {isa = PBXBuildFile; fileRef = 97F589E3187767F400455847 /* NSArray+Delaunay.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		97F58A00187767F400455847 /* NSMutableArray+Delaunay.m in Sources */ = {isa = PBXBuildFile; fileRef = 97F589E5187767F400455847 /* NSMutableArray+Delaunay.m */; };
+		97F58A01187767F400455847 /* DelaunayEdge.m in Sources */ = {isa = PBXBuildFile; fileRef = 97F589E7187767F400455847 /* DelaunayEdge.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		97F58A02187767F400455847 /* DelaunaySite.m in Sources */ = {isa = PBXBuildFile; fileRef = 97F589E9187767F400455847 /* DelaunaySite.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		97F58A03187767F400455847 /* DelaunayPolygon.m in Sources */ = {isa = PBXBuildFile; fileRef = 97F589EB187767F400455847 /* DelaunayPolygon.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		97F58A04187767F400455847 /* DelaunayOrientation.m in Sources */ = {isa = PBXBuildFile; fileRef = 97F589ED187767F400455847 /* DelaunayOrientation.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		97F58A05187767F400455847 /* DelaunayEdgeReorderer.m in Sources */ = {isa = PBXBuildFile; fileRef = 97F589EF187767F400455847 /* DelaunayEdgeReorderer.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		97F58A06187767F400455847 /* DelaunayVertex.m in Sources */ = {isa = PBXBuildFile; fileRef = 97F589F1187767F400455847 /* DelaunayVertex.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		97F58A07187767F400455847 /* DelaunayHalfEdge.m in Sources */ = {isa = PBXBuildFile; fileRef = 97F589F3187767F400455847 /* DelaunayHalfEdge.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		97F58A08187767F400455847 /* DelaunayLineSegment.m in Sources */ = {isa = PBXBuildFile; fileRef = 97F589F5187767F400455847 /* DelaunayLineSegment.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		97F58A09187767F400455847 /* DelaunayVoronoi.m in Sources */ = {isa = PBXBuildFile; fileRef = 97F589F8187767F400455847 /* DelaunayVoronoi.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		97F58A0A187767F400455847 /* DelaunaySiteList.m in Sources */ = {isa = PBXBuildFile; fileRef = 97F589FA187767F400455847 /* DelaunaySiteList.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		97F58A0B187767F400455847 /* DelaunayHalfEdgePriorityQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 97F589FC187767F400455847 /* DelaunayHalfEdgePriorityQueue.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		97F58A0C187767F400455847 /* DelaunayEdgeList.m in Sources */ = {isa = PBXBuildFile; fileRef = 97F589FE187767F400455847 /* DelaunayEdgeList.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		97F589CF187767B500455847 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 97F5899A187767B400455847 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 97F589A1187767B400455847;
+			remoteInfo = DelaunayTriangulation_SpriteKit_tutorial;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		97F589A2187767B400455847 /* DelaunayTriangulation_SpriteKit_tutorial.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DelaunayTriangulation_SpriteKit_tutorial.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		97F589A5187767B400455847 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		97F589A7187767B400455847 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		97F589A9187767B400455847 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		97F589AB187767B400455847 /* SpriteKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SpriteKit.framework; path = System/Library/Frameworks/SpriteKit.framework; sourceTree = SDKROOT; };
+		97F589AF187767B400455847 /* DelaunayTriangulation_SpriteKit_tutorial-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "DelaunayTriangulation_SpriteKit_tutorial-Info.plist"; sourceTree = "<group>"; };
+		97F589B1187767B400455847 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		97F589B3187767B400455847 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		97F589B5187767B400455847 /* DelaunayTriangulation_SpriteKit_tutorial-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DelaunayTriangulation_SpriteKit_tutorial-Prefix.pch"; sourceTree = "<group>"; };
+		97F589B6187767B400455847 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		97F589B7187767B400455847 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		97F589BA187767B400455847 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		97F589BC187767B400455847 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		97F589BD187767B400455847 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		97F589BF187767B400455847 /* MyScene.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyScene.h; sourceTree = "<group>"; };
+		97F589C0187767B400455847 /* MyScene.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyScene.m; sourceTree = "<group>"; };
+		97F589C2187767B400455847 /* Spaceship.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Spaceship.png; sourceTree = "<group>"; };
+		97F589C4187767B500455847 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		97F589CA187767B500455847 /* DelaunayTriangulation_SpriteKit_tutorialTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DelaunayTriangulation_SpriteKit_tutorialTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		97F589CB187767B500455847 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		97F589D3187767B500455847 /* DelaunayTriangulation_SpriteKit_tutorialTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "DelaunayTriangulation_SpriteKit_tutorialTests-Info.plist"; sourceTree = "<group>"; };
+		97F589D5187767B500455847 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		97F589D7187767B500455847 /* DelaunayTriangulation_SpriteKit_tutorialTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DelaunayTriangulation_SpriteKit_tutorialTests.m; sourceTree = "<group>"; };
+		97F589E2187767F400455847 /* NSArray+Delaunay.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+Delaunay.h"; sourceTree = "<group>"; };
+		97F589E3187767F400455847 /* NSArray+Delaunay.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+Delaunay.m"; sourceTree = "<group>"; };
+		97F589E4187767F400455847 /* NSMutableArray+Delaunay.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableArray+Delaunay.h"; sourceTree = "<group>"; };
+		97F589E5187767F400455847 /* NSMutableArray+Delaunay.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableArray+Delaunay.m"; sourceTree = "<group>"; };
+		97F589E6187767F400455847 /* DelaunayEdge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DelaunayEdge.h; sourceTree = "<group>"; };
+		97F589E7187767F400455847 /* DelaunayEdge.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DelaunayEdge.m; sourceTree = "<group>"; };
+		97F589E8187767F400455847 /* DelaunaySite.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DelaunaySite.h; sourceTree = "<group>"; };
+		97F589E9187767F400455847 /* DelaunaySite.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DelaunaySite.m; sourceTree = "<group>"; };
+		97F589EA187767F400455847 /* DelaunayPolygon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DelaunayPolygon.h; sourceTree = "<group>"; };
+		97F589EB187767F400455847 /* DelaunayPolygon.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DelaunayPolygon.m; sourceTree = "<group>"; };
+		97F589EC187767F400455847 /* DelaunayOrientation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DelaunayOrientation.h; sourceTree = "<group>"; };
+		97F589ED187767F400455847 /* DelaunayOrientation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DelaunayOrientation.m; sourceTree = "<group>"; };
+		97F589EE187767F400455847 /* DelaunayEdgeReorderer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DelaunayEdgeReorderer.h; sourceTree = "<group>"; };
+		97F589EF187767F400455847 /* DelaunayEdgeReorderer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DelaunayEdgeReorderer.m; sourceTree = "<group>"; };
+		97F589F0187767F400455847 /* DelaunayVertex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DelaunayVertex.h; sourceTree = "<group>"; };
+		97F589F1187767F400455847 /* DelaunayVertex.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DelaunayVertex.m; sourceTree = "<group>"; };
+		97F589F2187767F400455847 /* DelaunayHalfEdge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DelaunayHalfEdge.h; sourceTree = "<group>"; };
+		97F589F3187767F400455847 /* DelaunayHalfEdge.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DelaunayHalfEdge.m; sourceTree = "<group>"; };
+		97F589F4187767F400455847 /* DelaunayLineSegment.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DelaunayLineSegment.h; sourceTree = "<group>"; };
+		97F589F5187767F400455847 /* DelaunayLineSegment.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DelaunayLineSegment.m; sourceTree = "<group>"; };
+		97F589F6187767F400455847 /* DelaunayCoordinate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DelaunayCoordinate.h; sourceTree = "<group>"; };
+		97F589F7187767F400455847 /* DelaunayVoronoi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DelaunayVoronoi.h; sourceTree = "<group>"; };
+		97F589F8187767F400455847 /* DelaunayVoronoi.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DelaunayVoronoi.m; sourceTree = "<group>"; };
+		97F589F9187767F400455847 /* DelaunaySiteList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DelaunaySiteList.h; sourceTree = "<group>"; };
+		97F589FA187767F400455847 /* DelaunaySiteList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DelaunaySiteList.m; sourceTree = "<group>"; };
+		97F589FB187767F400455847 /* DelaunayHalfEdgePriorityQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DelaunayHalfEdgePriorityQueue.h; sourceTree = "<group>"; };
+		97F589FC187767F400455847 /* DelaunayHalfEdgePriorityQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DelaunayHalfEdgePriorityQueue.m; sourceTree = "<group>"; };
+		97F589FD187767F400455847 /* DelaunayEdgeList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DelaunayEdgeList.h; sourceTree = "<group>"; };
+		97F589FE187767F400455847 /* DelaunayEdgeList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DelaunayEdgeList.m; sourceTree = "<group>"; };
+		97F58A0D1877681800455847 /* Delaunay.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Delaunay.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		97F5899F187767B400455847 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				97F589A8187767B400455847 /* CoreGraphics.framework in Frameworks */,
+				97F589AA187767B400455847 /* UIKit.framework in Frameworks */,
+				97F589AC187767B400455847 /* SpriteKit.framework in Frameworks */,
+				97F589A6187767B400455847 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		97F589C7187767B500455847 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				97F589CC187767B500455847 /* XCTest.framework in Frameworks */,
+				97F589CE187767B500455847 /* UIKit.framework in Frameworks */,
+				97F589CD187767B500455847 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		97F58999187767B400455847 = {
+			isa = PBXGroup;
+			children = (
+				97F589AD187767B400455847 /* DelaunayTriangulation_SpriteKit_tutorial */,
+				97F589D1187767B500455847 /* DelaunayTriangulation_SpriteKit_tutorialTests */,
+				97F589A4187767B400455847 /* Frameworks */,
+				97F589A3187767B400455847 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		97F589A3187767B400455847 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				97F589A2187767B400455847 /* DelaunayTriangulation_SpriteKit_tutorial.app */,
+				97F589CA187767B500455847 /* DelaunayTriangulation_SpriteKit_tutorialTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		97F589A4187767B400455847 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				97F589A5187767B400455847 /* Foundation.framework */,
+				97F589A7187767B400455847 /* CoreGraphics.framework */,
+				97F589A9187767B400455847 /* UIKit.framework */,
+				97F589AB187767B400455847 /* SpriteKit.framework */,
+				97F589CB187767B500455847 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		97F589AD187767B400455847 /* DelaunayTriangulation_SpriteKit_tutorial */ = {
+			isa = PBXGroup;
+			children = (
+				97F589E1187767D400455847 /* DelaunayClasses */,
+				97F589B6187767B400455847 /* AppDelegate.h */,
+				97F589B7187767B400455847 /* AppDelegate.m */,
+				97F589B9187767B400455847 /* Main.storyboard */,
+				97F589BC187767B400455847 /* ViewController.h */,
+				97F589BD187767B400455847 /* ViewController.m */,
+				97F589BF187767B400455847 /* MyScene.h */,
+				97F589C0187767B400455847 /* MyScene.m */,
+				97F589C2187767B400455847 /* Spaceship.png */,
+				97F589C4187767B500455847 /* Images.xcassets */,
+				97F589AE187767B400455847 /* Supporting Files */,
+			);
+			path = DelaunayTriangulation_SpriteKit_tutorial;
+			sourceTree = "<group>";
+		};
+		97F589AE187767B400455847 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				97F589AF187767B400455847 /* DelaunayTriangulation_SpriteKit_tutorial-Info.plist */,
+				97F589B0187767B400455847 /* InfoPlist.strings */,
+				97F589B3187767B400455847 /* main.m */,
+				97F589B5187767B400455847 /* DelaunayTriangulation_SpriteKit_tutorial-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		97F589D1187767B500455847 /* DelaunayTriangulation_SpriteKit_tutorialTests */ = {
+			isa = PBXGroup;
+			children = (
+				97F589D7187767B500455847 /* DelaunayTriangulation_SpriteKit_tutorialTests.m */,
+				97F589D2187767B500455847 /* Supporting Files */,
+			);
+			path = DelaunayTriangulation_SpriteKit_tutorialTests;
+			sourceTree = "<group>";
+		};
+		97F589D2187767B500455847 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				97F589D3187767B500455847 /* DelaunayTriangulation_SpriteKit_tutorialTests-Info.plist */,
+				97F589D4187767B500455847 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		97F589E1187767D400455847 /* DelaunayClasses */ = {
+			isa = PBXGroup;
+			children = (
+				97F58A0D1877681800455847 /* Delaunay.h */,
+				97F589E2187767F400455847 /* NSArray+Delaunay.h */,
+				97F589E3187767F400455847 /* NSArray+Delaunay.m */,
+				97F589E4187767F400455847 /* NSMutableArray+Delaunay.h */,
+				97F589E5187767F400455847 /* NSMutableArray+Delaunay.m */,
+				97F589E6187767F400455847 /* DelaunayEdge.h */,
+				97F589E7187767F400455847 /* DelaunayEdge.m */,
+				97F589E8187767F400455847 /* DelaunaySite.h */,
+				97F589E9187767F400455847 /* DelaunaySite.m */,
+				97F589EA187767F400455847 /* DelaunayPolygon.h */,
+				97F589EB187767F400455847 /* DelaunayPolygon.m */,
+				97F589EC187767F400455847 /* DelaunayOrientation.h */,
+				97F589ED187767F400455847 /* DelaunayOrientation.m */,
+				97F589EE187767F400455847 /* DelaunayEdgeReorderer.h */,
+				97F589EF187767F400455847 /* DelaunayEdgeReorderer.m */,
+				97F589F0187767F400455847 /* DelaunayVertex.h */,
+				97F589F1187767F400455847 /* DelaunayVertex.m */,
+				97F589F2187767F400455847 /* DelaunayHalfEdge.h */,
+				97F589F3187767F400455847 /* DelaunayHalfEdge.m */,
+				97F589F4187767F400455847 /* DelaunayLineSegment.h */,
+				97F589F5187767F400455847 /* DelaunayLineSegment.m */,
+				97F589F6187767F400455847 /* DelaunayCoordinate.h */,
+				97F589F7187767F400455847 /* DelaunayVoronoi.h */,
+				97F589F8187767F400455847 /* DelaunayVoronoi.m */,
+				97F589F9187767F400455847 /* DelaunaySiteList.h */,
+				97F589FA187767F400455847 /* DelaunaySiteList.m */,
+				97F589FB187767F400455847 /* DelaunayHalfEdgePriorityQueue.h */,
+				97F589FC187767F400455847 /* DelaunayHalfEdgePriorityQueue.m */,
+				97F589FD187767F400455847 /* DelaunayEdgeList.h */,
+				97F589FE187767F400455847 /* DelaunayEdgeList.m */,
+			);
+			name = DelaunayClasses;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		97F589A1187767B400455847 /* DelaunayTriangulation_SpriteKit_tutorial */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 97F589DB187767B500455847 /* Build configuration list for PBXNativeTarget "DelaunayTriangulation_SpriteKit_tutorial" */;
+			buildPhases = (
+				97F5899E187767B400455847 /* Sources */,
+				97F5899F187767B400455847 /* Frameworks */,
+				97F589A0187767B400455847 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DelaunayTriangulation_SpriteKit_tutorial;
+			productName = DelaunayTriangulation_SpriteKit_tutorial;
+			productReference = 97F589A2187767B400455847 /* DelaunayTriangulation_SpriteKit_tutorial.app */;
+			productType = "com.apple.product-type.application";
+		};
+		97F589C9187767B500455847 /* DelaunayTriangulation_SpriteKit_tutorialTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 97F589DE187767B500455847 /* Build configuration list for PBXNativeTarget "DelaunayTriangulation_SpriteKit_tutorialTests" */;
+			buildPhases = (
+				97F589C6187767B500455847 /* Sources */,
+				97F589C7187767B500455847 /* Frameworks */,
+				97F589C8187767B500455847 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				97F589D0187767B500455847 /* PBXTargetDependency */,
+			);
+			name = DelaunayTriangulation_SpriteKit_tutorialTests;
+			productName = DelaunayTriangulation_SpriteKit_tutorialTests;
+			productReference = 97F589CA187767B500455847 /* DelaunayTriangulation_SpriteKit_tutorialTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		97F5899A187767B400455847 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = "Sam  keene";
+				TargetAttributes = {
+					97F589C9187767B500455847 = {
+						TestTargetID = 97F589A1187767B400455847;
+					};
+				};
+			};
+			buildConfigurationList = 97F5899D187767B400455847 /* Build configuration list for PBXProject "DelaunayTriangulation_SpriteKit_tutorial" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 97F58999187767B400455847;
+			productRefGroup = 97F589A3187767B400455847 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				97F589A1187767B400455847 /* DelaunayTriangulation_SpriteKit_tutorial */,
+				97F589C9187767B500455847 /* DelaunayTriangulation_SpriteKit_tutorialTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		97F589A0187767B400455847 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				97F589B2187767B400455847 /* InfoPlist.strings in Resources */,
+				97F589C5187767B500455847 /* Images.xcassets in Resources */,
+				97F589C3187767B400455847 /* Spaceship.png in Resources */,
+				97F589BB187767B400455847 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		97F589C8187767B500455847 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				97F589D6187767B500455847 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		97F5899E187767B400455847 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				97F58A05187767F400455847 /* DelaunayEdgeReorderer.m in Sources */,
+				97F58A0A187767F400455847 /* DelaunaySiteList.m in Sources */,
+				97F58A01187767F400455847 /* DelaunayEdge.m in Sources */,
+				97F58A08187767F400455847 /* DelaunayLineSegment.m in Sources */,
+				97F58A04187767F400455847 /* DelaunayOrientation.m in Sources */,
+				97F58A09187767F400455847 /* DelaunayVoronoi.m in Sources */,
+				97F58A0B187767F400455847 /* DelaunayHalfEdgePriorityQueue.m in Sources */,
+				97F58A02187767F400455847 /* DelaunaySite.m in Sources */,
+				97F58A07187767F400455847 /* DelaunayHalfEdge.m in Sources */,
+				97F589C1187767B400455847 /* MyScene.m in Sources */,
+				97F58A03187767F400455847 /* DelaunayPolygon.m in Sources */,
+				97F589BE187767B400455847 /* ViewController.m in Sources */,
+				97F58A00187767F400455847 /* NSMutableArray+Delaunay.m in Sources */,
+				97F58A06187767F400455847 /* DelaunayVertex.m in Sources */,
+				97F589B8187767B400455847 /* AppDelegate.m in Sources */,
+				97F589FF187767F400455847 /* NSArray+Delaunay.m in Sources */,
+				97F589B4187767B400455847 /* main.m in Sources */,
+				97F58A0C187767F400455847 /* DelaunayEdgeList.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		97F589C6187767B500455847 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				97F589D8187767B500455847 /* DelaunayTriangulation_SpriteKit_tutorialTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		97F589D0187767B500455847 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 97F589A1187767B400455847 /* DelaunayTriangulation_SpriteKit_tutorial */;
+			targetProxy = 97F589CF187767B500455847 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		97F589B0187767B400455847 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				97F589B1187767B400455847 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		97F589B9187767B400455847 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				97F589BA187767B400455847 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		97F589D4187767B500455847 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				97F589D5187767B500455847 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		97F589D9187767B500455847 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		97F589DA187767B500455847 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		97F589DC187767B500455847 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "DelaunayTriangulation_SpriteKit_tutorial/DelaunayTriangulation_SpriteKit_tutorial-Prefix.pch";
+				INFOPLIST_FILE = "DelaunayTriangulation_SpriteKit_tutorial/DelaunayTriangulation_SpriteKit_tutorial-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SPRITEKIT_TEXTURE_ATLAS_OUTPUT = YES;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		97F589DD187767B500455847 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "DelaunayTriangulation_SpriteKit_tutorial/DelaunayTriangulation_SpriteKit_tutorial-Prefix.pch";
+				INFOPLIST_FILE = "DelaunayTriangulation_SpriteKit_tutorial/DelaunayTriangulation_SpriteKit_tutorial-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SPRITEKIT_TEXTURE_ATLAS_OUTPUT = YES;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		97F589DF187767B500455847 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/DelaunayTriangulation_SpriteKit_tutorial.app/DelaunayTriangulation_SpriteKit_tutorial";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "DelaunayTriangulation_SpriteKit_tutorial/DelaunayTriangulation_SpriteKit_tutorial-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "DelaunayTriangulation_SpriteKit_tutorialTests/DelaunayTriangulation_SpriteKit_tutorialTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		97F589E0187767B500455847 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/DelaunayTriangulation_SpriteKit_tutorial.app/DelaunayTriangulation_SpriteKit_tutorial";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "DelaunayTriangulation_SpriteKit_tutorial/DelaunayTriangulation_SpriteKit_tutorial-Prefix.pch";
+				INFOPLIST_FILE = "DelaunayTriangulation_SpriteKit_tutorialTests/DelaunayTriangulation_SpriteKit_tutorialTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		97F5899D187767B400455847 /* Build configuration list for PBXProject "DelaunayTriangulation_SpriteKit_tutorial" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				97F589D9187767B500455847 /* Debug */,
+				97F589DA187767B500455847 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		97F589DB187767B500455847 /* Build configuration list for PBXNativeTarget "DelaunayTriangulation_SpriteKit_tutorial" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				97F589DC187767B500455847 /* Debug */,
+				97F589DD187767B500455847 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		97F589DE187767B500455847 /* Build configuration list for PBXNativeTarget "DelaunayTriangulation_SpriteKit_tutorialTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				97F589DF187767B500455847 /* Debug */,
+				97F589E0187767B500455847 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 97F5899A187767B400455847 /* Project object */;
+}
